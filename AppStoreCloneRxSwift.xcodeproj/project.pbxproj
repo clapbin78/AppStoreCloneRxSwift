@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B37AD847C5196D8937DBE46 /* Pods_AppStoreCloneRxSwift_AppStoreCloneRxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC23B2AFD76FBD665CC0FD9 /* Pods_AppStoreCloneRxSwift_AppStoreCloneRxSwiftUITests.framework */; };
 		99CE1A76C31908D1DB853653 /* Pods_AppStoreCloneRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF354BB5B7C0F222D81A1B1 /* Pods_AppStoreCloneRxSwift.framework */; };
+		F113F8B92C42635600C3BB24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F113F8B82C42635600C3BB24 /* README.md */; };
 		F1F7E2512C425C7100DB2A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7E2502C425C7100DB2A42 /* AppDelegate.swift */; };
 		F1F7E2532C425C7100DB2A42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7E2522C425C7100DB2A42 /* SceneDelegate.swift */; };
 		F1F7E2552C425C7100DB2A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7E2542C425C7100DB2A42 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		6AC23B2AFD76FBD665CC0FD9 /* Pods_AppStoreCloneRxSwift_AppStoreCloneRxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreCloneRxSwift_AppStoreCloneRxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		762855110975AD4CFEE06C46 /* Pods-AppStoreCloneRxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreCloneRxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreCloneRxSwiftTests/Pods-AppStoreCloneRxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0C64A2A8CB336F817E2DDEF /* Pods-AppStoreCloneRxSwift-AppStoreCloneRxSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreCloneRxSwift-AppStoreCloneRxSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreCloneRxSwift-AppStoreCloneRxSwiftUITests/Pods-AppStoreCloneRxSwift-AppStoreCloneRxSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F113F8B82C42635600C3BB24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F1F7E24D2C425C7100DB2A42 /* AppStoreCloneRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreCloneRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F7E2502C425C7100DB2A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F7E2522C425C7100DB2A42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,9 +118,179 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F113F8BA2C42637200C3BB24 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7E2502C425C7100DB2A42 /* AppDelegate.swift */,
+				F1F7E2522C425C7100DB2A42 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F113F8BB2C42657E00C3BB24 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F113F8C12C42674000C3BB24 /* Entities */,
+				F113F8C22C42674B00C3BB24 /* UseCases */,
+				F113F8C32C42675400C3BB24 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F113F8BC2C42659700C3BB24 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F113F8C52C42678700C3BB24 /* MainScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F113F8BD2C4266DC00C3BB24 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F113F8C72C42679800C3BB24 /* Repositories */,
+				F113F8C82C4267A000C3BB24 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F113F8BE2C4266E100C3BB24 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				F113F8C92C4267AD00C3BB24 /* Network */,
+				F113F8CA2C4267B300C3BB24 /* Database */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		F113F8BF2C4266E900C3BB24 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F113F8CD2C42685200C3BB24 /* Extention */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F113F8C02C4266F300C3BB24 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7E2612C425C7200DB2A42 /* Info.plist */,
+				F113F8CC2C4267D400C3BB24 /* Asset */,
+				F113F8CB2C4267C500C3BB24 /* StoryBoard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F113F8C12C42674000C3BB24 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F113F8C22C42674B00C3BB24 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F113F8C32C42675400C3BB24 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F113F8C42C42676700C3BB24 /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F113F8C42C42676700C3BB24 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F113F8C52C42678700C3BB24 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				F113F8C62C42679200C3BB24 /* View */,
+				F113F8CE2C42687600C3BB24 /* ViewModel */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		F113F8C62C42679200C3BB24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7E2562C425C7100DB2A42 /* Main.storyboard */,
+				F1F7E2542C425C7100DB2A42 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F113F8C72C42679800C3BB24 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F113F8C82C4267A000C3BB24 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F113F8C92C4267AD00C3BB24 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F113F8CA2C4267B300C3BB24 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7E2592C425C7100DB2A42 /* AppStoreCloneRxSwift.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F113F8CB2C4267C500C3BB24 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7E25E2C425C7200DB2A42 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		F113F8CC2C4267D400C3BB24 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7E25C2C425C7200DB2A42 /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		F113F8CD2C42685200C3BB24 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		F113F8CE2C42687600C3BB24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F1F7E2442C425C7100DB2A42 = {
 			isa = PBXGroup;
 			children = (
+				F113F8B82C42635600C3BB24 /* README.md */,
 				F1F7E24F2C425C7100DB2A42 /* AppStoreCloneRxSwift */,
 				F1F7E2692C425C7200DB2A42 /* AppStoreCloneRxSwiftTests */,
 				F1F7E2732C425C7200DB2A42 /* AppStoreCloneRxSwiftUITests */,
@@ -141,14 +313,13 @@
 		F1F7E24F2C425C7100DB2A42 /* AppStoreCloneRxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				F1F7E2502C425C7100DB2A42 /* AppDelegate.swift */,
-				F1F7E2522C425C7100DB2A42 /* SceneDelegate.swift */,
-				F1F7E2542C425C7100DB2A42 /* ViewController.swift */,
-				F1F7E2562C425C7100DB2A42 /* Main.storyboard */,
-				F1F7E25C2C425C7200DB2A42 /* Assets.xcassets */,
-				F1F7E25E2C425C7200DB2A42 /* LaunchScreen.storyboard */,
-				F1F7E2612C425C7200DB2A42 /* Info.plist */,
-				F1F7E2592C425C7100DB2A42 /* AppStoreCloneRxSwift.xcdatamodeld */,
+				F113F8BA2C42637200C3BB24 /* Application */,
+				F113F8BB2C42657E00C3BB24 /* Domain */,
+				F113F8BC2C42659700C3BB24 /* Presentation */,
+				F113F8BD2C4266DC00C3BB24 /* Data */,
+				F113F8BE2C4266E100C3BB24 /* Infrastructure */,
+				F113F8C02C4266F300C3BB24 /* Resource */,
+				F113F8BF2C4266E900C3BB24 /* Util */,
 			);
 			path = AppStoreCloneRxSwift;
 			sourceTree = "<group>";
@@ -281,6 +452,7 @@
 			files = (
 				F1F7E2602C425C7200DB2A42 /* LaunchScreen.storyboard in Resources */,
 				F1F7E25D2C425C7200DB2A42 /* Assets.xcassets in Resources */,
+				F113F8B92C42635600C3BB24 /* README.md in Resources */,
 				F1F7E2582C425C7100DB2A42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
